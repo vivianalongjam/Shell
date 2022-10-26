@@ -1,0 +1,22 @@
+NAME: 
+	cd
+
+USAGE: 
+	cd [-LP] [DIR]
+
+DESCRIPTION:
+	Changes directory
+
+OPTIONS:
+	-L		forces symbolic links to be followed (default)
+	-p      does not follow symbolic links 
+
+CASES/ERRORS HANDLED:
+	1. Invalid options
+	2. Directory does not exist
+    3. "cd ~", "cd", "cd -P", "cd -P ~", "cd -L", "cd -L ~" all direct to /home
+
+TEST CASES:
+	1. cd External          	        [changes directory to "External"]
+	2. cd -L External           		[changes directory to "External"]
+	3. cd -P External             	    [changes directory to "External"]

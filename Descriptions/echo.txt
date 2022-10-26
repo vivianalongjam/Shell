@@ -1,0 +1,21 @@
+NAME: 
+	echo
+
+USAGE: 
+	echo [-n | --help] [arg ...]
+
+DESCRIPTION:
+	Writes specified operands to the standard output
+
+OPTIONS:
+	-n		do not print the trailing newline character
+	--help  displays this page
+
+CASES/ERRORS HANDLED:
+	1. Invalid options will automatically be treated as arguments
+	2. Recognizing escape sequences
+
+TEST CASES:
+	1. echo Hello I'm Viviana	        [outputs Hello I'm Viviana to stdout]
+	2. echo -n Hello I'm Viviana		[outputs Hello I'm Viviana without any space to stdout]
+	3. echo --help              	    [displays this page]

@@ -1,0 +1,21 @@
+NAME: 
+	ls
+
+USAGE: 
+	ls [-aR]
+
+DESCRIPTION:
+	For each operand that names a file of a type other than directory, ls displays its name
+
+OPTIONS:
+	-a		include directory entries whose names begin with a dot
+	-R      recursively list subdirectories encountered
+
+CASES/ERRORS HANDLED:
+	1. Invalid options
+	2. Doesn't display directories in case there are none but does not say invalid
+
+TEST CASES:
+	1. ls                     	        [displays contents of present directory]
+	2. ls -a                       		[displays contents of present directory including the ones whose names begin with a dot]
+	3. ls -R                     	    [displays contents of present directory, and recursively lists subdirectories encountered]

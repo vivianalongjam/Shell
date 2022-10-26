@@ -1,0 +1,22 @@
+NAME: 
+	rm
+
+USAGE: 
+	pwd [-vi] [file]
+
+DESCRIPTION:
+    The rm utility attempts to remove the non-directory type files specified on the command line.
+
+OPTIONS:
+	-v		Be verbose when deleting files, showing them as they are removed.
+	-i      Request confirmation before attempting to remove each file, regardless of the file's permissions, or whether or not the standard input device is a terminal.
+
+CASES/ERRORS HANDLED:
+	1. Invalid options
+	2. Invalid number of commands
+    3. File does not exist
+
+TEST CASES:
+	1. rm a.txt                    	        [removes the file a.txt]
+	2. rm -i a.txt                          [removes the file a.txt after asking for confirmation. In case, confirmation is not given, the file is not removed.]
+	3. rm -v a.txt                    	    [removes the file a.txt while specifying it as it is removed.]

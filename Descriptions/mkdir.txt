@@ -1,0 +1,21 @@
+NAME: 
+	mkdir
+
+USAGE: 
+	mkdir [-pv]
+
+DESCRIPTION:
+	The mkdir utility creates the directories named as operands
+
+OPTIONS:
+	-p		Create intermediate directories as required.
+	-v      Be verbose when creating directories, listing them as they are created.
+
+CASES/ERRORS HANDLED:
+	1. Invalid options
+	2. Doesn't create a duplicate directory in case it already exists, displays error
+
+TEST CASES:
+	1. mkdir folder1                    	        [makes subdirectory folder1 in current directory]
+	2. mkdir -p folder1/folder2/folder3             [makes subdirectory folder3 following the path folder1/folder2, which are created in case they do not already exist]
+	3. mkdir -v folder1                    	        [makes subdirectory folder1 in current directory, and prints status of whether it has been created]

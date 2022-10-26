@@ -1,0 +1,21 @@
+NAME: 
+	cat
+
+USAGE: 
+	cat [-sb] [arg ...]
+
+DESCRIPTION:
+	concatenates and prints files
+
+OPTIONS:
+	-b		number the non-blank output lines, starting at 1
+	-s      squeeze multiple adjacent empty lines, causing the output to be single spaced
+
+CASES/ERRORS HANDLED:
+	1. Invalid options will print invalid and exit the command
+	2. Invalid file names will display invalid and exit the command
+
+TEST CASES:
+	1. cat a.txt            	        [prints the contents of a.txt file]
+	2. cat -s a.txt             		[prints the contents of a.txt file without multiple adjacent empty lines]
+	3. cat -b a.txt             	    [prints the contents of a.txt with each line numbered]

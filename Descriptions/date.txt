@@ -1,0 +1,21 @@
+NAME: 
+	date
+
+USAGE: 
+	date [-uI] [arg ...]
+
+DESCRIPTION:
+	displays the current date and time
+
+OPTIONS:
+	-u		displays date time in UTC
+	-I      displays date time in ISO 8601
+
+CASES/ERRORS HANDLED:
+	1. Invalid options will print invalid and exit the command
+	2. Invalid number of commands (extra options) will display invalid and exit the command
+
+TEST CASES:
+	1. date            	        [displays local date time]
+	2. date -u             		[displays UTC date time]
+	3. date -I             	    [displays ISO 8601 date time]

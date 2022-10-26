@@ -1,0 +1,21 @@
+NAME: 
+	pwd
+
+USAGE: 
+	pwd [-LP]
+
+DESCRIPTION:
+    The pwd utility writes the absolute pathname of the current working directory to the standard output.
+
+OPTIONS:
+	-L		Display the logical current working directory.
+	-P      Display the physical current working directory (all symbolic links resolved).
+
+CASES/ERRORS HANDLED:
+	1. Invalid options
+	2. Invalid number of commands
+
+TEST CASES:
+	1. pwd                    	        [prints the current working directory]
+	2. pwd -L                           [prints the logical current working directory]
+	3. pwd -P                    	    [prints the physical current working directory]
